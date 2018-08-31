@@ -1,0 +1,103 @@
+/* Make the navigation bar */
+ul {
+  margin-top: -8px;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make the navigation bar */
+ul li {
+  display: inline-block;
+}
+
+/* Make the navigation bar */
+ul li a {
+  display: block;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+  font-family: Tahoma, Helvetica, Verdana, sans-serif;
+  padding: 10px 10px;
+  background-color: #26558e;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+ul li a:hover {
+  background-color: #3577c6;
+}
+
+#main a:hover {
+  color: yellow;
+}
+
+/* Make the navigation bar */
+#top {
+  text-align: center;
+}
+
+/* Edit the main content of the website */
+#main {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  text-align: center;
+  float: left;
+  width: 80%;
+  background: #afe8ff;
+  padding: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: Tahoma, Helvetica, Verdana, sans-serif;
+  box-shadow: 0 0 .3em black;
+  color: Black;
+  font-size: large;
+}
+
+/* background for the base of the website*/
+body {
+  background: #132644;
+}
+
+/*Make headers and footers small and italic*/
+header, footer {
+  font-style: italic;
+  font-size: small;
+}
+
+/*line spacing of paragraphs*/
+p {
+  line-height: 1.5em;
+}
+
+
+ul li:hover ul {
+  display: block;
+}
+
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+
+ul li ul li {
+  display: block;
+}
+
+img {
+  width: 400px;
+  height: 250px;
+}
+
+video {
+  width: 800px;
+  height: 500px;
+}
+
+#portrait {
+  width: 475px;
+  height: 360px;
+}
