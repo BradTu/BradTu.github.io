@@ -1,0 +1,187 @@
+﻿<!-- DevBlog Made by Brad Tully 8 May 2020-->
+<!DOCTYPE html>
+<html>
+<link rel="icon" type="image/png" href="Images/Controller.png">
+<head>
+    <meta charset="utf-8">
+    <title> Game Development Blog</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div id="top">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="devblog.html">Dev Blog</a></li>
+            <li>
+                <a href="#">Play</a>
+                <ul>
+                    <li><a href="https://bradtully.net/ParasiticPassage/">Parasitic Passage</a></li>
+                    <li><a href="https://bradtully.net/PollutionProblems/">Pollution Problems</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <article>
+        <div id="main">
+            <h1 class="head"> Gun and Sword: Part 3 </h1>
+            <header> Created by Brad Tully </header>
+            <video controls>
+                <source src="Videos/GunAndSword3.mp4" type="video/mp4" alt="Was a video of the second update to Gun and Sword.">
+            </video>
+            <img src="Images/RoomGen1.PNG" alt="Was a picture of procedurally generated levels..." title="Procedurally generated levels">
+            <img src="Images/RoomGen2.PNG" alt="Was a picture of procedurally generated levels..." title="Procedurally generated levels">
+            <img src="Images/RoomGen3.PNG" alt="Was a picture of procedurally generated levels..." title="Procedurally generated levels">
+            <img src="Images/RoomGen4.PNG" alt="Was a picture of procedurally generated levels..." title="Procedurally generated levels">
+            <br>
+            <p>
+                For this update I focused on level generating. All of the rooms are the same size and shape. They differ in the number
+                of doors that they have. They can have 1-4 doors on them either going up, right, down, or left. The result is that you
+                have levels that can very a decent amount in how they branch out in different directions. After I got the level generator 
+                working properly I then made it so that 5 enemies will spawn in a room when the player enters it. The number of melee and
+                shooting enemies is random. I also made it so that the player could not leave a room until all of the enemies have been defeated.
+                Following that they can return to and from rooms that have been cleared.
+            </p>
+            <br><br>
+            <footer>
+                &copy; 2020 Brad Tully
+            </footer>
+        </div>
+    </article>
+
+    <article>
+        <div id="main">
+            <h1 class="head"> Gun and Sword: Part 2 </h1>
+            <header> Created by Brad Tully </header>
+            <video controls>
+                <source src="Videos/GunAndSword2.mp4" type="video/mp4" alt="Was a video of the second update to Gun and Sword.">
+            </video>
+            <br>
+            <p>
+                The focus of this update was to add juice to the game. I did this by adding camera shake for all damage dealing and receiving. There
+                is larger camera shake when the player is dealing damage then receiving it. I also made it so that whenever the player or enemies take
+                damage they flash a different color. I also added a trail renderer to the player when they dodge as well as making them turn transparent.
+                Now when the player dodges they have invinciblity frames too. I also improved the sword combat so that hits are more accurately detected.
+            </p>
+            <br><br>
+            <footer>
+                &copy; 2020 Brad Tully
+            </footer>
+        </div>
+    </article>
+
+    <article>
+        <div id="main">
+            <h1 class="head"> Gun and Sword: Part 1 </h1>
+            <header> Created by Brad Tully </header>
+            <video controls>
+                <source src="Videos/GunAndSword1.mp4" type="video/mp4" alt="Was a video of the first update to Gun and Sword.">
+            </video>
+            <br>
+            <p>
+                To start the game I first started by adding the controls and player movement. The player could aim, move, dodge, change weapons
+                and shoot/ attack with the sword. Next I added the melee enemies. The melee enemies chase the player around and when they get within
+                a close range they will attack. I also gave them health and they receive damage from the player's attacks. After that I gave the player
+                a health and stamina bar as well as giving the enemies a health bar. I added in the mechanic that enemies that are killed with a sword
+                will drop ammo, enemies killed with a gun will drop stamina points and enemies that are killed using both weapons will also drop health points. The final
+                thing I added to the game at this point was shooting enemies. They stay stationary and fire bullets at the player.
+            </p>
+            <br><br>
+            <footer>
+                &copy; 2020 Brad Tully
+            </footer>
+        </div>
+    </article>
+    
+    
+    <article>
+        <div id="main">
+            <h1 class="head"> Gun and Sword Game Design Document </h1>
+            <header> Created by Brad Tully </header>
+            <br>
+            <h2>Project Description</h2>
+            <p>
+                This game is going to be a 2D top-down action adventure game that focuses on combat and resource management. 
+                There will be both guns and melee weapons with different abilities and attributes. It will feature procedurally 
+                generated levels that culminate in a boss fight. It will be in the realm of a semi-difficult game.
+            </p>
+            <h2>Game Mechanics</h2>
+            <p>
+                The core mechanics of the game are shooting guns and attacking with melee weapons. The player will toggle through 
+                guns using the ‘E’ button or mouse scroll up and toggle through melee weapons using the ‘Q’ button or mouse scroll down. 
+                In order to get ammo to reload weapons the player must kill enemies using melee weapons. The player will get stamina to dodge 
+                by killing enemies with guns. The player will get health by killing enemies using combo kills where they use both guns and 
+                melee weapons in a combo to kill enemies. 
+            </p>
+            <h2>Controls</h2>
+            <p id="bulletpoints">
+                <br>
+                Move: WASD and Arrow keys
+                <br>
+                Toggle Guns: E, mouse scroll up
+                <br>
+                Toggle Melee Weapons: Q, mouse scroll down
+                <br>
+                Shoot / Attack: Left click
+                <br>
+                Dodge: Spacebar
+            </p>
+            <h2>Enemies</h2>
+            <p id="bulletpoints">
+                •	Shooting enemies- enemies with guns that will fire on them from a distance, there will be enemies with a variety of guns
+                <br>
+                •	Shield enemies- Carry a shield that bullets can’t penetrate they will slowly march towards the player to try and attack them with a melee weapon
+                <br>
+                •	Melee enemies- Carry a melee weapon and rush the player to attack in close range
+                <br>
+                •	Dive bombers- Weak enemies that rush the player and try to blow up next to them
+
+            </p>
+            <h2>Bosses</h2>
+            <p>
+                There will be three bosses. The specifics are still a work in progress.
+            </p>
+            <h2>Weapons</h2>
+            <p id="bulletpoints">
+                <br>
+                •	Pistol- fire one bullet at a time, moderate damage
+                <br>
+                •	Shotgun- fire a spread of 4 bullets, high damage when whole spread hits
+                <br>
+                •	Frost Thrower- shoots ice, does little damage but freezes enemy leaving them susceptible to melee attacks
+                <br>
+                •	Ricochet Gun- bullets will bounce off walls a total of 3 times, moderate damage
+                <br>
+                •	Lance- fast small damage attacks, sword that makes the player lunge and can knock back enemies with shields
+                <br>
+                •	Electric Pole- Does small damage, but paralyzes the enemy
+                <br>
+                •	Sword- swiping attacks, mid damage and speed
+            </p>
+            <h2>Losing</h2>
+            <p>
+                The player will die if they take too much damage from incoming attacks and their health is at zero. 
+                On hard difficulty the player will respawn at the beginning of the game and a new map will be generated.
+                On medium difficulty the player will have a limited number of lives and respawn in the previous room they were in.
+                On easy difficulty the player will have unlimited lives and respawn in the previous room they were in.
+            </p>
+            <h2>Level Design</h2>
+            <p>
+                The game will be made up of three floors. Each floor is made up of ten procedurally generated interconnected rooms. 
+                At the end of each floor will be a boss fight. After killing the boss the player will get on an elevator to a new floor 
+                the game will end at the last boss fight on the third floor.
+            </p> 
+            <br><br>
+            <footer>
+                &copy; 2020 Brad Tully
+            </footer>
+        </div>
+    </article>
+
+        <br><br>
+        <footer>
+            &copy; 2020 Brad Tully
+        </footer>
+</body>
+</html>
