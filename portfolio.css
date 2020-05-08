@@ -56,6 +56,10 @@ ul li a:hover {
   font-size: large;
 }
 
+#bulletpoints {
+  text-align: left;
+}
+
 /* background for the base of the website*/
 body {
   background: #132644;
@@ -94,10 +98,11 @@ img {
 
 video {
   width: 800px;
-  height: 500px;
+  height: 450px;
 }
 
 #portrait {
   width: 475px;
   height: 360px;
 }
+
