@@ -1,4 +1,4 @@
-﻿<!-- DevBlog Made by Brad Tully 8 May 2020-->
+<!-- DevBlog Made by Brad Tully 8 May 2020-->
 <!DOCTYPE html>
 <html>
 <link rel="icon" type="image/png" href="Images/Controller.png">
@@ -12,7 +12,7 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="DevBlog.html">Dev Blog</a></li>
+            <li><a href="devblog.html">Dev Blog</a></li>
             <li>
                 <a href="#">Play</a>
                 <ul>
@@ -25,14 +25,42 @@
 
     <article>
         <div id="main">
+            <h1 class="head"> Gun and Sword: Part 5 </h1>
+            <header> Created by Brad Tully </header>
+            <header> May 21, 2020 </header>
+            <video controls>
+                <source src="Images/GunAndSword5.mp4" type="video/mp4" alt="Was a video of update 5.">
+            </video>
+            <br>
+            <p>
+                For this update I did a few things. The first thing I did was make it so that the player has their guns in their left hand and
+                their swords in their right hand. I did this because with the addition of new weapons it felt more natural to have both types of weapons
+                out at once and switch between weapons of the same type. Now with this change left click shoots the guns and the right click attacks with
+                the melee weapons. Branching off that point I added a shotgun to the game. It fires a spread of four projectiles at a time and has a longer
+                cool down between shots. I added the frost thrower. The frost thrower does little damage but slows down enemies until their frozen. Once their
+                frozen there is a damage multiplier when their attacked with melee weapons. I added the lance to the game. It has a high attack rate with low damage.
+                It has a unique trait where it is the only weapon that can destroy the shields of shield enemies. The shield enemy has a shield that blocks all weapons
+                except the lance. Once the shield is destroyed it behaves in the same way as a regular melee enemy. The last thing I added to the game this week was the
+                dive bomber enemy. They run at the player quickly and explode when close. If the player shoots them once the bomber will explode in place.
+            </p>
+            <br><br>
+            <footer>
+                &copy; 2020 Brad Tully
+            </footer>
+        </div>
+    </article>
+
+    <article>
+        <div id="main">
             <h1 class="head"> Gun and Sword: Part 4 </h1>
             <header> Created by Brad Tully </header>
+            <header> May 15, 2020 </header>
             <video controls>
                 <source src="Images/GunAndSword4.mp4" type="video/mp4" alt="Was a video of a sick boss fight.">
             </video>
             <br>
             <br>
-            <img src="Images/FrozenKingBehaviorTree.png" alt="Should be a picture of a behavior tree" title="Frozen King Behavior Tree">
+            <img src="Images/FrozenKingBehaviorTree.PNG" alt="Was a picture of a behavior tree" title="Frozen King Behavior Tree">
             <br>
             <p>
                 This update to the game was all about adding in the first boss fight. The boss' name is the
@@ -53,11 +81,12 @@
             </footer>
         </div>
     </article>
-    
+
     <article>
         <div id="main">
             <h1 class="head"> Gun and Sword: Part 3 </h1>
             <header> Created by Brad Tully </header>
+            <header> May 8, 2020 </header>
             <video controls>
                 <source src="Images/GunAndSword3.mp4" type="video/mp4" alt="Was a video of the third update to Gun and Sword.">
             </video>
@@ -85,6 +114,7 @@
         <div id="main">
             <h1 class="head"> Gun and Sword: Part 2 </h1>
             <header> Created by Brad Tully </header>
+            <header> April 20, 2020 </header>
             <video controls>
                 <source src="Images/GunAndSword2.mp4" type="video/mp4" alt="Was a video of the second update to Gun and Sword.">
             </video>
@@ -106,6 +136,7 @@
         <div id="main">
             <h1 class="head"> Gun and Sword: Part 1 </h1>
             <header> Created by Brad Tully </header>
+            <header> April 3-16, 2020 </header>
             <video controls>
                 <source src="Images/GunAndSword1.mp4" type="video/mp4" alt="Was a video of the first update to Gun and Sword.">
             </video>
@@ -130,6 +161,7 @@
         <div id="main">
             <h1 class="head"> Gun and Sword Game Design Document </h1>
             <header> Created by Brad Tully </header>
+            <header> Updated: May 21, 2020 </header>
             <br>
             <h2>Project Description</h2>
             <p>
@@ -140,7 +172,7 @@
             <h2>Game Mechanics</h2>
             <p>
                 The core mechanics of the game are shooting guns and attacking with melee weapons. The player will toggle through 
-                guns using the ‘E’ button or mouse scroll up and toggle through melee weapons using the ‘Q’ button or mouse scroll down. 
+                guns using the ‘Q’ button or mouse scroll up and toggle through melee weapons using the ‘E’ button or mouse scroll down. 
                 In order to get ammo to reload weapons the player must kill enemies using melee weapons. The player will get stamina to dodge 
                 by killing enemies with guns. The player will get health by killing enemies using combo kills where they use both guns and 
                 melee weapons in a combo to kill enemies. 
@@ -150,11 +182,13 @@
                 <br>
                 Move: WASD and Arrow keys
                 <br>
-                Toggle Guns: E, mouse scroll up
+                Toggle Guns: Q, mouse scroll up
                 <br>
-                Toggle Melee Weapons: Q, mouse scroll down
+                Toggle Melee Weapons: E, mouse scroll down
                 <br>
-                Shoot / Attack: Left click
+                Shoot: Left click
+                <br />
+                Attack: Right Click
                 <br>
                 Dodge: Spacebar
             </p>
@@ -170,9 +204,14 @@
 
             </p>
             <h2>Bosses</h2>
-            <p>
-                There will be three bosses. The specifics are still a work in progress.
-            </p>
+            <p id="bulletpoints">
+                •	Boss 1: Frozen King- He wields two swords, his attacks include a double jab, a frost shot, a spin attack and a frozen cloud that freezes the enemy in place
+                followed up by a high damage double sword attack
+                <br>
+                •	Boss 2: TBD
+                <br>
+                •	Boss 3: TBD
+            </pid="bulletpoints">
             <h2>Weapons</h2>
             <p id="bulletpoints">
                 <br>
