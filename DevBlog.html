@@ -28,7 +28,7 @@
             <h1 class="head"> Gun and Sword: Part 5 </h1>
             <header> Created by Brad Tully </header>
             <header> May 21, 2020 </header>
-            <video controls>
+            <video controls controlsList="nodownload">
                 <source src="Images/GunAndSword5.mp4" type="video/mp4" alt="Was a video of update 5.">
             </video>
             <br>
@@ -37,9 +37,9 @@
                 their swords in their right hand. I did this because with the addition of new weapons it felt more natural to have both types of weapons
                 out at once and switch between weapons of the same type. Now with this change left click shoots the guns and the right click attacks with
                 the melee weapons. Branching off that point I added a shotgun to the game. It fires a spread of four projectiles at a time and has a longer
-                cool down between shots. I added the frost thrower. The frost thrower does little damage but slows down enemies until their frozen. Once their
-                frozen there is a damage multiplier when their attacked with melee weapons. I added the lance to the game. It has a high attack rate with low damage.
-                It has a unique trait where it is the only weapon that can destroy the shields of shield enemies. The shield enemy has a shield that blocks all weapons
+                cool down time between shots. I added the frost thrower. The frost thrower does little damage but slows down enemies until they're frozen. Once they're
+                frozen there is a damage multiplier applied when they're attacked with melee weapons. I added the lance to the game. It has a high attack rate with low damage.
+                It has a unique trait where it is the only weapon that can destroy the shields of the shield enemies. The shield enemy has a shield that blocks all weapons
                 except the lance. Once the shield is destroyed it behaves in the same way as a regular melee enemy. The last thing I added to the game this week was the
                 dive bomber enemy. They run at the player quickly and explode when close. If the player shoots them once the bomber will explode in place.
             </p>
@@ -55,7 +55,7 @@
             <h1 class="head"> Gun and Sword: Part 4 </h1>
             <header> Created by Brad Tully </header>
             <header> May 15, 2020 </header>
-            <video controls>
+            <video controls controlsList="nodownload">
                 <source src="Images/GunAndSword4.mp4" type="video/mp4" alt="Was a video of a sick boss fight.">
             </video>
             <br>
@@ -69,10 +69,10 @@
                 is within melee range the boss will try to hit them with the left/ right sword jab combo. Once the player gets the
                 Frozen King's health down to fifty percent he will enter phase two. To start phase two he will do the spinning sword
                 attack. When the bosses health is at or below forty percent he will do a one time drop of health and stamina items that will restore
-                forty percent of each resource to the player. In the second phase the speed of the boss is increased and he will continue to use 
-                the frost shot and the left/ right sword jab combo. A new close range attack is introduced in the second phase. The attack consists 
-                of a frozen cloud being bursted which if it hits the player will freeze them in place and the Frozen King will follow it up with a 
-                devestating double sword hit that does high damage. Finally when the boss' health is less than fifteen percent he will do one final 
+                forty percent of each resource to the player. In the second phase the speed of the boss is increased and he will continue to use
+                the frost shot and the left/ right sword jab combo. A new close range attack is introduced in the second phase. The attack consists
+                of a frozen cloud being bursted which if it hits the player will freeze them in place and the Frozen King will follow it up with a
+                devestating double sword hit that deals high damage. Finally when the boss' health is less than fifteen percent he will do one final
                 spinning attack in desperation. The behavior tree of the boss is pictured above.
             </p>
             <br><br>
@@ -87,7 +87,7 @@
             <h1 class="head"> Gun and Sword: Part 3 </h1>
             <header> Created by Brad Tully </header>
             <header> May 8, 2020 </header>
-            <video controls>
+            <video controls controlsList="nodownload">
                 <source src="Images/GunAndSword3.mp4" type="video/mp4" alt="Was a video of the third update to Gun and Sword.">
             </video>
             <img src="Images/RoomGen1.PNG" alt="Was a picture of procedurally generated levels..." title="Procedurally generated levels">
@@ -98,7 +98,7 @@
             <p>
                 For this update I focused on level generating. All of the rooms are the same size and shape. They differ in the number
                 of doors that they have. They can have 1-4 doors on them either going up, right, down, or left. The result is that you
-                have levels that can very a decent amount in how they branch out in different directions. After I got the level generator 
+                have levels that can very a decent amount in how they branch out in different directions. After I got the level generator
                 working properly I then made it so that 5 enemies will spawn in a room when the player enters it. The number of melee and
                 shooting enemies is random. I also made it so that the player could not leave a room until all of the enemies have been defeated.
                 Following that they can return to and from rooms that have been cleared.
@@ -115,7 +115,7 @@
             <h1 class="head"> Gun and Sword: Part 2 </h1>
             <header> Created by Brad Tully </header>
             <header> April 20, 2020 </header>
-            <video controls>
+            <video controls controlsList="nodownload">
                 <source src="Images/GunAndSword2.mp4" type="video/mp4" alt="Was a video of the second update to Gun and Sword.">
             </video>
             <br>
@@ -137,7 +137,7 @@
             <h1 class="head"> Gun and Sword: Part 1 </h1>
             <header> Created by Brad Tully </header>
             <header> April 3-16, 2020 </header>
-            <video controls>
+            <video controls controlsList="nodownload">
                 <source src="Images/GunAndSword1.mp4" type="video/mp4" alt="Was a video of the first update to Gun and Sword.">
             </video>
             <br>
@@ -155,8 +155,8 @@
             </footer>
         </div>
     </article>
-    
-    
+
+
     <article>
         <div id="main">
             <h1 class="head"> Gun and Sword Game Design Document </h1>
@@ -165,17 +165,17 @@
             <br>
             <h2>Project Description</h2>
             <p>
-                This game is going to be a 2D top-down action adventure game that focuses on combat and resource management. 
-                There will be both guns and melee weapons with different abilities and attributes. It will feature procedurally 
+                This game is going to be a 2D top-down action adventure game that focuses on combat and resource management.
+                There will be both guns and melee weapons with different abilities and attributes. It will feature procedurally
                 generated levels that culminate in a boss fight. It will be in the realm of a semi-difficult game.
             </p>
             <h2>Game Mechanics</h2>
             <p>
-                The core mechanics of the game are shooting guns and attacking with melee weapons. The player will toggle through 
-                guns using the ‘Q’ button or mouse scroll up and toggle through melee weapons using the ‘E’ button or mouse scroll down. 
-                In order to get ammo to reload weapons the player must kill enemies using melee weapons. The player will get stamina to dodge 
-                by killing enemies with guns. The player will get health by killing enemies using combo kills where they use both guns and 
-                melee weapons in a combo to kill enemies. 
+                The core mechanics of the game are shooting guns and attacking with melee weapons. The player will toggle through
+                guns using the ‘Q’ button or mouse scroll up and toggle through melee weapons using the ‘E’ button or mouse scroll down.
+                In order to get ammo to reload weapons the player must kill enemies using melee weapons. The player will get stamina to dodge
+                by killing enemies with guns. The player will get health by killing enemies using combo kills where they use both guns and
+                melee weapons in a combo to kill enemies.
             </p>
             <h2>Controls</h2>
             <p id="bulletpoints">
@@ -211,8 +211,8 @@
                 •	Boss 2: TBD
                 <br>
                 •	Boss 3: TBD
-            </pid="bulletpoints">
-            <h2>Weapons</h2>
+                </pid="bulletpoints">
+                <h2>Weapons</h2>
             <p id="bulletpoints">
                 <br>
                 •	Pistol- fire one bullet at a time, moderate damage
@@ -231,17 +231,17 @@
             </p>
             <h2>Losing</h2>
             <p>
-                The player will die if they take too much damage from incoming attacks and their health is at zero. 
+                The player will die if they take too much damage from incoming attacks and their health is at zero.
                 On hard difficulty the player will respawn at the beginning of the game and a new map will be generated.
                 On medium difficulty the player will have a limited number of lives and respawn in the previous room they were in.
                 On easy difficulty the player will have unlimited lives and respawn in the previous room they were in.
             </p>
             <h2>Level Design</h2>
             <p>
-                The game will be made up of three floors. Each floor is made up of ten procedurally generated interconnected rooms. 
-                At the end of each floor will be a boss fight. After killing the boss the player will get on an elevator to a new floor 
+                The game will be made up of three floors. Each floor is made up of ten procedurally generated interconnected rooms.
+                At the end of each floor will be a boss fight. After killing the boss the player will get on an elevator to a new floor
                 the game will end at the last boss fight on the third floor.
-            </p> 
+            </p>
             <br><br>
             <footer>
                 &copy; 2020 Brad Tully
@@ -249,9 +249,9 @@
         </div>
     </article>
 
-        <br><br>
-        <footer>
-            &copy; 2020 Brad Tully
-        </footer>
+    <br><br>
+    <footer>
+        &copy; 2020 Brad Tully
+    </footer>
 </body>
 </html>
