@@ -22,6 +22,30 @@
             </li>
         </ul>
     </div>
+    
+    <article>
+        <div id="main">
+            <h1 class="head"> Gun and Sword: Part 8 </h1>
+            <header> Created by Brad Tully </header>
+            <header> July 10, 2020 </header>
+            <br>
+            <img src="Images/StartScreen.PNG" alt="Was a picture of the start screen" title="Start Screen">
+            <img src="Images/Controls.PNG" alt="Was a picture of the controls screen" title="Controls Screen">
+            <br>
+            <p>
+                For this update I have made the starting menu and the controls page for the game. I have also been
+                going through the game to find bugs and fix them as well as fine tune certain aspects of the game.
+                I also fully implemented the death and respawn system. When the player dies they will respawn in the
+                first room of the level with full health and stamina. The room that they died in will reset (the enemies that
+                were still alive will be destroyed and when the player reenters the room new enemies will spawn). I also put together
+                all of the pieces of the game so now the game can be fully played from start to finish.
+            </p>
+            <br><br>
+            <footer>
+                &copy; 2020 Brad Tully
+            </footer>
+        </div>
+    </article>
 
     <article>
         <div id="main">
@@ -224,7 +248,7 @@
         <div id="main">
             <h1 class="head"> Gun and Sword Game Design Document </h1>
             <header> Created by Brad Tully </header>
-            <header> Updated: June 2, 2020 </header>
+            <header> Updated: July 10, 2020 </header>
             <br>
             <h2>Project Description</h2>
             <p>
@@ -235,7 +259,7 @@
             <h2>Game Mechanics</h2>
             <p>
                 The core mechanics of the game are shooting guns and attacking with melee weapons. The player will toggle through
-                guns using the ‘Q’ button or mouse scroll up and toggle through melee weapons using the ‘E’ button or mouse scroll down.
+                guns using the ‘Q’ button or mouse scroll down and toggle through melee weapons using the ‘E’ button or mouse scroll up.
                 In order to get ammo to reload weapons the player must kill enemies using melee weapons. The player will get stamina to dodge
                 by killing enemies with guns. The player will get health by killing enemies using combo kills where they use both guns and
                 melee weapons in a combo to kill enemies.
@@ -245,9 +269,9 @@
                 <br>
                 Move: WASD and Arrow keys
                 <br>
-                Toggle Guns: Q, mouse scroll up
+                Toggle Guns: Q, mouse scroll down
                 <br>
-                Toggle Melee Weapons: E, mouse scroll down
+                Toggle Melee Weapons: E, mouse scroll up
                 <br>
                 Shoot: Left click
                 <br />
@@ -257,7 +281,7 @@
             </p>
             <h2>Enemies</h2>
             <p id="bulletpoints">
-                •	Shooting enemies- enemies with guns that will fire on them from a distance, there will be enemies with a variety of guns
+                •	Shooting enemies- enemies with guns that will fire on them from a distance
                 <br>
                 •	Shield enemies- Carry a shield that bullets can’t penetrate they will slowly march towards the player to try and attack them with a melee weapon
                 <br>
@@ -271,11 +295,13 @@
                 •	Boss 1: Frozen King- He wields two swords, his attacks include a double jab, a frost shot, a spin attack and a frozen cloud that freezes the enemy in place
                 followed up by a high damage double sword attack
                 <br>
-                •	Boss 2: He is a robot, his attacks include a clap attack, a spinning shooting sequence with projectiles that bounce of the walls three times (there is one
+                •	Boss 2: Robotic Slayer- He is a robot, his attacks include a clap attack, a spinning shooting sequence with projectiles that bounce of the walls three times (there is one
                 that has projectiles shoot in one direction and another that has them shoot in two directions), an AOE explosion, and an attack where there's two AOE electric
                 fields on the left and right side of the room while the boss spins shooting out electric bolts from all four arms
                 <br>
-                •	Boss 3: TBD
+                •	Boss 3: Queen and King of the Dungeon- The King is melee focused. He has two maces, he does a left/ right jab combo, he has a double slam combo and if the
+                player is far away he will shoot a projectile that doesn't deal damage, but will hold the player in place. The Queen is range focused. She moves from point
+                to point in the boss room and she shoots two bullets at a time at the player. If the player gets close she will smash the player with her guns.
             </p>
                 <h2>Weapons</h2>
             <p id="bulletpoints">
@@ -286,25 +312,20 @@
                 <br>
                 •	Frost Thrower- shoots ice, does little damage but freezes enemy leaving them susceptible to melee attacks
                 <br>
-                •	Ricochet Gun- bullets will bounce off walls a total of 3 times, moderate damage
-                <br>
                 •	Lance- fast small damage attacks, sword that makes the player lunge and can knock back enemies with shields
-                <br>
-                •	Electric Pole- Does small damage, but paralyzes the enemy
                 <br>
                 •	Sword- swiping attacks, mid damage and speed
             </p>
             <h2>Losing</h2>
             <p>
-                The player will die if they take too much damage from incoming attacks and their health is at zero.
-                On hard difficulty the player will respawn at the beginning of the game and a new map will be generated.
-                On medium difficulty the player will have a limited number of lives and respawn in the previous room they were in.
-                On easy difficulty the player will have unlimited lives and respawn in the previous room they were in.
+                The player will die if they take too much damage from incoming attacks and their health is at or less than zero.
+                The player will respawn in the first room of the level with full health and stamina. The room that they died in
+                will reset, all of the enemies will be destroyed and upon reentry new enemies will spawn.
             </p>
             <h2>Level Design</h2>
             <p>
                 The game will be made up of three floors. Each floor is made up of ten procedurally generated interconnected rooms.
-                At the end of each floor will be a boss fight. After killing the boss the player will get on an elevator to a new floor
+                At the end of each floor will be a boss fight. After killing the boss the player will advance to a new floor
                 the game will end at the last boss fight on the third floor.
             </p>
             <br><br>
